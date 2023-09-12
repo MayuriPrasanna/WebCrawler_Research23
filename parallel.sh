@@ -15,7 +15,7 @@ scripts=(
     "python_api_crawler.py"
     "python_api_schulisch_ausbildung.py"
     "python_umschulung_crawler.py"
-    "python_api_crawler_jobsuche_analysis.ipynb"
+    "python_api_crawler_jobsuche_analysis.py"
     "python_api_entgeltatlas.py"
 )
 
