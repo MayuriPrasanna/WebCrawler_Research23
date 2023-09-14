@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1f10497e609a3fd108d24014b0dfc42 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1f10497e609a3fd108d24014b0dfc42" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1f10497e609a3fd108d24014b0dfc42 = L.map(
+                "map_f1f10497e609a3fd108d24014b0dfc42",
+                {
+                    center: [51.1657, 10.4515],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+
+            
+
+        
+    
+            var tile_layer_383d6603a7cacee1f70da6d0f7c7f635 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var marker_a1143703a594bc1f017945245c8a9ffe = L.marker(
+                [53.462451, 9.695107],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_515d10f1893e1477ad5d9285764bba9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a1143703a594bc1f017945245c8a9ffe.setIcon(icon_515d10f1893e1477ad5d9285764bba9b);
+        
+    
+        var popup_f8c09fbdc1db243e6c20436e9e23f9ba = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_ec72a8034212205c40a6af80a3eb9fe2 = $(`<div id="html_ec72a8034212205c40a6af80a3eb9fe2" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Buxtehude</strong><br>(IBB Institut für Berufliche Bildung AG): 2956 trainings</div></div>`)[0];
+                popup_f8c09fbdc1db243e6c20436e9e23f9ba.setContent(html_ec72a8034212205c40a6af80a3eb9fe2);
+            
+        
+
+        marker_a1143703a594bc1f017945245c8a9ffe.bindPopup(popup_f8c09fbdc1db243e6c20436e9e23f9ba)
+        ;
+
+        
+    
+    
+            var marker_e01fda5831774b5712f14271f258e4a0 = L.marker(
+                [52.545623, 13.414175],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_07a267e76a55230a34e9d33d74a48214 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e01fda5831774b5712f14271f258e4a0.setIcon(icon_07a267e76a55230a34e9d33d74a48214);
+        
+    
+        var popup_7787b2591ea027c4f07fdd1ebef024fd = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3fadcf925fe532a1d8f76c5678c753d3 = $(`<div id="html_3fadcf925fe532a1d8f76c5678c753d3" style="width: 100.0%; height: 100.0%;"><div style='width: 200px; font-size: 14px;'><strong>Berlin</strong><br>(Yoga Shala Berlin): 2037 trainings</div></div>`)[0];
+                popup_7787b2591ea027c4f07fdd1ebef024fd.setContent(html_3fadcf925fe532a1d8f76c5678c753d3);
+            
+        
+
+        marker_e01fda5831774b5712f14271f258e4a0.bindPopup(popup_7787b2591ea027c4f07fdd1ebef024fd)
+        ;
+
+        
+    
+    
+            var marker_5beb81a73f3d273fd816ea52addae10f = L.marker(
+                [51.503394, 7.498787],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_3af6e96ca91c509b976565b4406dd392 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5beb81a73f3d273fd816ea52addae10f.setIcon(icon_3af6e96ca91c509b976565b4406dd392);
+        
+    
+        var popup_60caecee7063ceba34992abde79e2c6d = L.popup({"maxWidth": 420});
+
+        
+            
+                var html_48f6480aa9edd3eb72f8903ba1ab87ed = $(`<div id="html_48f6480aa9edd3eb72f8903ba1ab87ed" style="width: 100.0%; height: 100.0%;"><div style='width: 420px; font-size: 14px;'><strong>Dortmund</strong><br>(Technisches Ausbildungszentrum TAZ GmbH): 1055 trainings</div></div>`)[0];
+                popup_60caecee7063ceba34992abde79e2c6d.setContent(html_48f6480aa9edd3eb72f8903ba1ab87ed);
+            
+        
+
+        marker_5beb81a73f3d273fd816ea52addae10f.bindPopup(popup_60caecee7063ceba34992abde79e2c6d)
+        ;
+
+        
+    
+    
+            var marker_3fb82748b86f4b58ad1546880325b4cd = L.marker(
+                [48.162588, 11.559455],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_4e207f9975137cabb94a28b13c8c17c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_3fb82748b86f4b58ad1546880325b4cd.setIcon(icon_4e207f9975137cabb94a28b13c8c17c4);
+        
+    
+        var popup_95092cb79a99ace8379a4025de06131b = L.popup({"maxWidth": 720});
+
+        
+            
+                var html_d3954122cacce893955f4cff96a63912 = $(`<div id="html_d3954122cacce893955f4cff96a63912" style="width: 100.0%; height: 100.0%;"><div style='width: 720px; font-size: 14px;'><strong>München</strong><br>(Berufliche Fortbildungszentren der Bayerischen Wirtschaft (bfz) gGmbH): 679 trainings</div></div>`)[0];
+                popup_95092cb79a99ace8379a4025de06131b.setContent(html_d3954122cacce893955f4cff96a63912);
+            
+        
+
+        marker_3fb82748b86f4b58ad1546880325b4cd.bindPopup(popup_95092cb79a99ace8379a4025de06131b)
+        ;
+
+        
+    
+    
+            var marker_872d1a8978dc573e8f6b576aec0b966d = L.marker(
+                [52.403282, 9.718831],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_8f8c8c1a5e8b21c96e4ddb98c97fcb9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_872d1a8978dc573e8f6b576aec0b966d.setIcon(icon_8f8c8c1a5e8b21c96e4ddb98c97fcb9a);
+        
+    
+        var popup_d45b25c521e8ba509d423519315c2e1e = L.popup({"maxWidth": 190});
+
+        
+            
+                var html_5ec285c007035b17246538d189e58fb9 = $(`<div id="html_5ec285c007035b17246538d189e58fb9" style="width: 100.0%; height: 100.0%;"><div style='width: 190px; font-size: 14px;'><strong>Hannover</strong><br>(SBH Nordost GmbH): 675 trainings</div></div>`)[0];
+                popup_d45b25c521e8ba509d423519315c2e1e.setContent(html_5ec285c007035b17246538d189e58fb9);
+            
+        
+
+        marker_872d1a8978dc573e8f6b576aec0b966d.bindPopup(popup_d45b25c521e8ba509d423519315c2e1e)
+        ;
+
+        
+    
+    
+            var marker_a10b5ec513de6c4eb4e6551c23c1b185 = L.marker(
+                [53.575745, 10.043204],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_cffe41625df93ebb4a544b4778c7aa4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_a10b5ec513de6c4eb4e6551c23c1b185.setIcon(icon_cffe41625df93ebb4a544b4778c7aa4e);
+        
+    
+        var popup_dadcbf1c1c6256dc917c00f27dee382c = L.popup({"maxWidth": 660});
+
+        
+            
+                var html_0b86fb9bcf18c67c2d6a10fe10abdab7 = $(`<div id="html_0b86fb9bcf18c67c2d6a10fe10abdab7" style="width: 100.0%; height: 100.0%;"><div style='width: 660px; font-size: 14px;'><strong>Hamburg</strong><br>(DAA - Deutsche Angestellten-Akademie GmbH Sitz der Gesellschaft): 561 trainings</div></div>`)[0];
+                popup_dadcbf1c1c6256dc917c00f27dee382c.setContent(html_0b86fb9bcf18c67c2d6a10fe10abdab7);
+            
+        
+
+        marker_a10b5ec513de6c4eb4e6551c23c1b185.bindPopup(popup_dadcbf1c1c6256dc917c00f27dee382c)
+        ;
+
+        
+    
+    
+            var marker_1a8f9b43b1599d4f902e615820fe3572 = L.marker(
+                [49.458188, 11.098481],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_b7b03bfc97cf1d50d1f336ffe048ef80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1a8f9b43b1599d4f902e615820fe3572.setIcon(icon_b7b03bfc97cf1d50d1f336ffe048ef80);
+        
+    
+        var popup_878c499aee8affb7168f65f5a0995ba4 = L.popup({"maxWidth": 350});
+
+        
+            
+                var html_658816b97fd2de3b3001198c83b10b85 = $(`<div id="html_658816b97fd2de3b3001198c83b10b85" style="width: 100.0%; height: 100.0%;"><div style='width: 350px; font-size: 14px;'><strong>Nürnberg, Mittelfranken</strong><br>(Berufliche Schule - Direktorat 5): 445 trainings</div></div>`)[0];
+                popup_878c499aee8affb7168f65f5a0995ba4.setContent(html_658816b97fd2de3b3001198c83b10b85);
+            
+        
+
+        marker_1a8f9b43b1599d4f902e615820fe3572.bindPopup(popup_878c499aee8affb7168f65f5a0995ba4)
+        ;
+
+        
+    
+    
+            var marker_1947e45409162fd4b867cba0f8bd67b7 = L.marker(
+                [48.716075, 9.117858],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_1e2310f7bbea480243a978211f39e95e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_1947e45409162fd4b867cba0f8bd67b7.setIcon(icon_1e2310f7bbea480243a978211f39e95e);
+        
+    
+        var popup_944169d4bf6c21f2fd23607018e18946 = L.popup({"maxWidth": 640});
+
+        
+            
+                var html_2a8f8a3d52df9d4cdc68ca2dc65e0821 = $(`<div id="html_2a8f8a3d52df9d4cdc68ca2dc65e0821" style="width: 100.0%; height: 100.0%;"><div style='width: 640px; font-size: 14px;'><strong>Stuttgart</strong><br>(Internationaler Bund (IB) Bildungszentrum Stuttgart Vaihingen): 376 trainings</div></div>`)[0];
+                popup_944169d4bf6c21f2fd23607018e18946.setContent(html_2a8f8a3d52df9d4cdc68ca2dc65e0821);
+            
+        
+
+        marker_1947e45409162fd4b867cba0f8bd67b7.bindPopup(popup_944169d4bf6c21f2fd23607018e18946)
+        ;
+
+        
+    
+    
+            var marker_1338f420e23e7423d4e30c08fa540e7c = L.marker(
+                [51.440246, 6.794706],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_1a0a37f19d20ccc319a398ea13a78858 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_1338f420e23e7423d4e30c08fa540e7c.setIcon(icon_1a0a37f19d20ccc319a398ea13a78858);
+        
+    
+        var popup_b70f62286fe578adf23295d5701283aa = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_398104c72b6808dffd68bba654e905de = $(`<div id="html_398104c72b6808dffd68bba654e905de" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Duisburg</strong><br>(IBB Institut für Berufliche Bildung AG): 319 trainings</div></div>`)[0];
+                popup_b70f62286fe578adf23295d5701283aa.setContent(html_398104c72b6808dffd68bba654e905de);
+            
+        
+
+        marker_1338f420e23e7423d4e30c08fa540e7c.bindPopup(popup_b70f62286fe578adf23295d5701283aa)
+        ;
+
+        
+    
+    
+            var marker_cbe2282b0a0cd20c1c512f3c48c4e1a4 = L.marker(
+                [53.079582, 8.805886],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_85c54b3b7f994f38d2d91e68377db539 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_cbe2282b0a0cd20c1c512f3c48c4e1a4.setIcon(icon_85c54b3b7f994f38d2d91e68377db539);
+        
+    
+        var popup_f36cd903cfcfd311d1a34debbcfe0ed7 = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_b843d230833d9f0c3bc3c180ff2e6a60 = $(`<div id="html_b843d230833d9f0c3bc3c180ff2e6a60" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Bremen</strong><br>(IBB Institut für Berufliche Bildung AG): 266 trainings</div></div>`)[0];
+                popup_f36cd903cfcfd311d1a34debbcfe0ed7.setContent(html_b843d230833d9f0c3bc3c180ff2e6a60);
+            
+        
+
+        marker_cbe2282b0a0cd20c1c512f3c48c4e1a4.bindPopup(popup_f36cd903cfcfd311d1a34debbcfe0ed7)
+        ;
+
+        
+    
+    
+            var marker_67d5b33f83fbd16798eff5d2b1d16b35 = L.marker(
+                [52.990396, 7.517278],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_47751a38c83a62647260c68cf96a5616 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67d5b33f83fbd16798eff5d2b1d16b35.setIcon(icon_47751a38c83a62647260c68cf96a5616);
+        
+    
+        var popup_97b0a00faf6aaf3f178129678c448a96 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_cae049a3038dc30c0020a6e21d594d53 = $(`<div id="html_cae049a3038dc30c0020a6e21d594d53" style="width: 100.0%; height: 100.0%;"><div style='width: 200px; font-size: 14px;'><strong>Surwold</strong><br>(Johannesburg GmbH): 264 trainings</div></div>`)[0];
+                popup_97b0a00faf6aaf3f178129678c448a96.setContent(html_cae049a3038dc30c0020a6e21d594d53);
+            
+        
+
+        marker_67d5b33f83fbd16798eff5d2b1d16b35.bindPopup(popup_97b0a00faf6aaf3f178129678c448a96)
+        ;
+
+        
+    
+    
+            var marker_131a85105cdfb46b5aa212ea9ecdc54f = L.marker(
+                [50.379638, 7.572465],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_cd56a1451fbe5548e39c46fc0ebd780e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_131a85105cdfb46b5aa212ea9ecdc54f.setIcon(icon_cd56a1451fbe5548e39c46fc0ebd780e);
+        
+    
+        var popup_d72226793f6764fb21ee93846b639f0b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1dbbf44df7c6defa13fe4f74e39568f6 = $(`<div id="html_1dbbf44df7c6defa13fe4f74e39568f6" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; font-size: 14px;'><strong>Koblenz am Rhein</strong><br>(DEKRA Akademie GmbH Koblenz): 263 trainings</div></div>`)[0];
+                popup_d72226793f6764fb21ee93846b639f0b.setContent(html_1dbbf44df7c6defa13fe4f74e39568f6);
+            
+        
+
+        marker_131a85105cdfb46b5aa212ea9ecdc54f.bindPopup(popup_d72226793f6764fb21ee93846b639f0b)
+        ;
+
+        
+    
+    
+            var marker_3da74892c1c754191dfce31466a129a5 = L.marker(
+                [49.7945, 9.93348],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_062cba0ac51f7d6f26f9ba6a3eb354f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3da74892c1c754191dfce31466a129a5.setIcon(icon_062cba0ac51f7d6f26f9ba6a3eb354f6);
+        
+    
+        var popup_5a4d96fab5e01a5c2a1366c1ac99a604 = L.popup({"maxWidth": 280});
+
+        
+            
+                var html_cb3073c6a5331562262e55835a6faa77 = $(`<div id="html_cb3073c6a5331562262e55835a6faa77" style="width: 100.0%; height: 100.0%;"><div style='width: 280px; font-size: 14px;'><strong>Würzburg</strong><br>(Kolping-Bildungswerk GmbH): 257 trainings</div></div>`)[0];
+                popup_5a4d96fab5e01a5c2a1366c1ac99a604.setContent(html_cb3073c6a5331562262e55835a6faa77);
+            
+        
+
+        marker_3da74892c1c754191dfce31466a129a5.bindPopup(popup_5a4d96fab5e01a5c2a1366c1ac99a604)
+        ;
+
+        
+    
+    
+            var marker_97690c1cb4258f6dfe9c16bc0dbf0fe7 = L.marker(
+                [51.827046, 7.058036],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_23084a8e7bb4c53ddeb14bf4f90fd377 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_97690c1cb4258f6dfe9c16bc0dbf0fe7.setIcon(icon_23084a8e7bb4c53ddeb14bf4f90fd377);
+        
+    
+        var popup_51e3dfe9240510b2832d35839129ddca = L.popup({"maxWidth": 460});
+
+        
+            
+                var html_83f415ba0a2891b4fd4baafcf0924a79 = $(`<div id="html_83f415ba0a2891b4fd4baafcf0924a79" style="width: 100.0%; height: 100.0%;"><div style='width: 460px; font-size: 14px;'><strong>Reken</strong><br>(Berufsbildungswerk Benediktushof Maria Veen): 253 trainings</div></div>`)[0];
+                popup_51e3dfe9240510b2832d35839129ddca.setContent(html_83f415ba0a2891b4fd4baafcf0924a79);
+            
+        
+
+        marker_97690c1cb4258f6dfe9c16bc0dbf0fe7.bindPopup(popup_51e3dfe9240510b2832d35839129ddca)
+        ;
+
+        
+    
+    
+            var marker_2e0416bb6cf90e25943bae36a42480b0 = L.marker(
+                [49.016786, 12.095991],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_553cddf78b16810390102cfcb35ecbe9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2e0416bb6cf90e25943bae36a42480b0.setIcon(icon_553cddf78b16810390102cfcb35ecbe9);
+        
+    
+        var popup_499bd9b75cbcdaed242d7d14dda9a153 = L.popup({"maxWidth": 630});
+
+        
+            
+                var html_9252c8b0e34b90362ba0f99a9bd81707 = $(`<div id="html_9252c8b0e34b90362ba0f99a9bd81707" style="width: 100.0%; height: 100.0%;"><div style='width: 630px; font-size: 14px;'><strong>Regensburg</strong><br>(IFP Gesellschaft für Fortbildung und Personalentwicklung mbH): 217 trainings</div></div>`)[0];
+                popup_499bd9b75cbcdaed242d7d14dda9a153.setContent(html_9252c8b0e34b90362ba0f99a9bd81707);
+            
+        
+
+        marker_2e0416bb6cf90e25943bae36a42480b0.bindPopup(popup_499bd9b75cbcdaed242d7d14dda9a153)
+        ;
+
+        
+    
+    
+            var marker_37392198f0227b848bc09322e6c844ce = L.marker(
+                [54.086511, 13.381414],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_de5c58cbba773946f76f7b92871ca4fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_37392198f0227b848bc09322e6c844ce.setIcon(icon_de5c58cbba773946f76f7b92871ca4fa);
+        
+    
+        var popup_4bbe9f84b10d517a34837eef1a41946e = L.popup({"maxWidth": 670});
+
+        
+            
+                var html_4154f23ce3c793032118fca58a796f79 = $(`<div id="html_4154f23ce3c793032118fca58a796f79" style="width: 100.0%; height: 100.0%;"><div style='width: 670px; font-size: 14px;'><strong>Greifswald, Hansestadt</strong><br>(Grone Bildungszentren Mecklenburg-Vorpommern GmbH -gemeinnützig-): 215 trainings</div></div>`)[0];
+                popup_4bbe9f84b10d517a34837eef1a41946e.setContent(html_4154f23ce3c793032118fca58a796f79);
+            
+        
+
+        marker_37392198f0227b848bc09322e6c844ce.bindPopup(popup_4bbe9f84b10d517a34837eef1a41946e)
+        ;
+
+        
+    
+    
+            var marker_e0b951a69d68231eb2b5fe7f18853f91 = L.marker(
+                [50.9363, 6.980644],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_b3d46aa920eb54a19f97745981fdf6d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e0b951a69d68231eb2b5fe7f18853f91.setIcon(icon_b3d46aa920eb54a19f97745981fdf6d5);
+        
+    
+        var popup_b9713669949d5b1e9b4531680591f9f3 = L.popup({"maxWidth": 850});
+
+        
+            
+                var html_8e7b8974fb00b96429b059e0fc72fd9f = $(`<div id="html_8e7b8974fb00b96429b059e0fc72fd9f" style="width: 100.0%; height: 100.0%;"><div style='width: 850px; font-size: 14px;'><strong>Köln</strong><br>(Malteser Hilfsdienst e.V. Regional- und Landesgeschäfts- stelle Nordrhein-Wesfalen): 200 trainings</div></div>`)[0];
+                popup_b9713669949d5b1e9b4531680591f9f3.setContent(html_8e7b8974fb00b96429b059e0fc72fd9f);
+            
+        
+
+        marker_e0b951a69d68231eb2b5fe7f18853f91.bindPopup(popup_b9713669949d5b1e9b4531680591f9f3)
+        ;
+
+        
+    
+    
+            var marker_bc0f05410dd4f662abfaf2bf79566114 = L.marker(
+                [51.03938, 13.737639],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_fca3cc510167b33b8716d931eff52f7e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_bc0f05410dd4f662abfaf2bf79566114.setIcon(icon_fca3cc510167b33b8716d931eff52f7e);
+        
+    
+        var popup_7eeb2e76878b6d20eba3861ef9a26281 = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_801eb7790aa7f24e9d60d50316d8f0df = $(`<div id="html_801eb7790aa7f24e9d60d50316d8f0df" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Dresden</strong><br>(IBB Institut für Berufliche Bildung AG): 199 trainings</div></div>`)[0];
+                popup_7eeb2e76878b6d20eba3861ef9a26281.setContent(html_801eb7790aa7f24e9d60d50316d8f0df);
+            
+        
+
+        marker_bc0f05410dd4f662abfaf2bf79566114.bindPopup(popup_7eeb2e76878b6d20eba3861ef9a26281)
+        ;
+
+        
+    
+    
+            var marker_8bd6e1b4050a714cca7a05e3831016b8 = L.marker(
+                [51.464692, 7.084678],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_4faaa143a0f43995cc8ad4fa5c34e171 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_8bd6e1b4050a714cca7a05e3831016b8.setIcon(icon_4faaa143a0f43995cc8ad4fa5c34e171);
+        
+    
+        var popup_3551297d072e7fb5d4c0fd75d9b29aa6 = L.popup({"maxWidth": 360});
+
+        
+            
+                var html_c5e6b74a381cdfd2947a70d8b7d0709f = $(`<div id="html_c5e6b74a381cdfd2947a70d8b7d0709f" style="width: 100.0%; height: 100.0%;"><div style='width: 360px; font-size: 14px;'><strong>Essen, Ruhr</strong><br>(Kolping Bildung Deutschland gGmbH): 195 trainings</div></div>`)[0];
+                popup_3551297d072e7fb5d4c0fd75d9b29aa6.setContent(html_c5e6b74a381cdfd2947a70d8b7d0709f);
+            
+        
+
+        marker_8bd6e1b4050a714cca7a05e3831016b8.bindPopup(popup_3551297d072e7fb5d4c0fd75d9b29aa6)
+        ;
+
+        
+    
+    
+            var marker_1c0413674cca17c6b52749758138c64f = L.marker(
+                [49.393199, 8.820767],
+                {}
+            ).addTo(map_f1f10497e609a3fd108d24014b0dfc42);
+        
+    
+            var icon_ad6bbde75a4766d8214cdc486508fdda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_1c0413674cca17c6b52749758138c64f.setIcon(icon_ad6bbde75a4766d8214cdc486508fdda);
+        
+    
+        var popup_d13f78bc87239fa526ddae71170e8deb = L.popup({"maxWidth": 390});
+
+        
+            
+                var html_206cb1e5f5c74f3d46ff3c1c5343d6cb = $(`<div id="html_206cb1e5f5c74f3d46ff3c1c5343d6cb" style="width: 100.0%; height: 100.0%;"><div style='width: 390px; font-size: 14px;'><strong>Neckargemünd</strong><br>(Berufsbildungswerk Neckargemünd GmbH): 179 trainings</div></div>`)[0];
+                popup_d13f78bc87239fa526ddae71170e8deb.setContent(html_206cb1e5f5c74f3d46ff3c1c5343d6cb);
+            
+        
+
+        marker_1c0413674cca17c6b52749758138c64f.bindPopup(popup_d13f78bc87239fa526ddae71170e8deb)
+        ;
+
+        
+    
+</script>
+</html>
