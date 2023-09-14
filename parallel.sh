@@ -7,7 +7,7 @@ pip install jupyter nbconvert
 jupyter nbconvert --to script python_api_crawler.ipynb
 jupyter nbconvert --to script python_api_schulisch_ausbildung.ipynb
 jupyter nbconvert --to script python_umschulung_crawler.ipynb
-jupyter nbconvert --to script python_api_jobsche_final.ipynb
+jupyter nbconvert --to script python_api_crawler_jobsuche_analysis.ipynb
 jupyter nbconvert --to script python_api_entgeltatlas.ipynb
 
 # Python script files to execute
@@ -15,7 +15,7 @@ scripts=(
     "python_api_crawler.py"
     "python_api_schulisch_ausbildung.py"
     "python_umschulung_crawler.py"
-    "python_api_jobsche_final.py"
+    "python_api_crawler_jobsuche_analysis.py"
     "python_api_entgeltatlas.py"
 )
 

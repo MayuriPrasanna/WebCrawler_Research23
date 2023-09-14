@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2aabd4b283a54284d79063da5b341ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d2aabd4b283a54284d79063da5b341ba" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d2aabd4b283a54284d79063da5b341ba = L.map(
+                "map_d2aabd4b283a54284d79063da5b341ba",
+                {
+                    center: [51.1657, 10.4515],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_d2aabd4b283a54284d79063da5b341ba);
+
+            
+
+        
+    
+            var tile_layer_e4563796dee88681da5165d36c5b4285 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var marker_d6f4b1cc436f8a2b76bbb8f483aa0888 = L.marker(
+                [51.445311, 7.490747],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_3472be441951e03751a5a59381f283bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d6f4b1cc436f8a2b76bbb8f483aa0888.setIcon(icon_3472be441951e03751a5a59381f283bb);
+        
+    
+        var popup_245b7d7d288f5dd080167780ac6ff731 = L.popup({"maxWidth": 320});
+
+        
+            
+                var html_11e81982c82da533623942be5fda19e2 = $(`<div id="html_11e81982c82da533623942be5fda19e2" style="width: 100.0%; height: 100.0%;"><div style='width: 320px; font-size: 14px;'><strong>Dortmund</strong><br>(Berufsförderungswerk Dortmund): 7663 trainings</div></div>`)[0];
+                popup_245b7d7d288f5dd080167780ac6ff731.setContent(html_11e81982c82da533623942be5fda19e2);
+            
+        
+
+        marker_d6f4b1cc436f8a2b76bbb8f483aa0888.bindPopup(popup_245b7d7d288f5dd080167780ac6ff731)
+        ;
+
+        
+    
+    
+            var marker_b610b06e77de3a801853b8abb89d6c98 = L.marker(
+                [52.58207, 13.399856],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_fa58b7f34db10179c6b64d6a671e64fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b610b06e77de3a801853b8abb89d6c98.setIcon(icon_fa58b7f34db10179c6b64d6a671e64fd);
+        
+    
+        var popup_6714c25cb96e431a7e71350569df006a = L.popup({"maxWidth": 400});
+
+        
+            
+                var html_de07a972f6d40c20afe55f2840f3b3d3 = $(`<div id="html_de07a972f6d40c20afe55f2840f3b3d3" style="width: 100.0%; height: 100.0%;"><div style='width: 400px; font-size: 14px;'><strong>Berlin</strong><br>(bildungsmarkt vulkan & waldenser gmbh): 3824 trainings</div></div>`)[0];
+                popup_6714c25cb96e431a7e71350569df006a.setContent(html_de07a972f6d40c20afe55f2840f3b3d3);
+            
+        
+
+        marker_b610b06e77de3a801853b8abb89d6c98.bindPopup(popup_6714c25cb96e431a7e71350569df006a)
+        ;
+
+        
+    
+    
+            var marker_6a8810e326faea8db428cb9f235b8a17 = L.marker(
+                [53.575745, 10.043204],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_b5cab65d37be499696cced2651133e6a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6a8810e326faea8db428cb9f235b8a17.setIcon(icon_b5cab65d37be499696cced2651133e6a);
+        
+    
+        var popup_8e3d8fcaa05c158e00d32d85ec0cc04c = L.popup({"maxWidth": 660});
+
+        
+            
+                var html_ae04da2c502604f3e0963e8f3843f5f9 = $(`<div id="html_ae04da2c502604f3e0963e8f3843f5f9" style="width: 100.0%; height: 100.0%;"><div style='width: 660px; font-size: 14px;'><strong>Hamburg</strong><br>(DAA - Deutsche Angestellten-Akademie GmbH Sitz der Gesellschaft): 2316 trainings</div></div>`)[0];
+                popup_8e3d8fcaa05c158e00d32d85ec0cc04c.setContent(html_ae04da2c502604f3e0963e8f3843f5f9);
+            
+        
+
+        marker_6a8810e326faea8db428cb9f235b8a17.bindPopup(popup_8e3d8fcaa05c158e00d32d85ec0cc04c)
+        ;
+
+        
+    
+    
+            var marker_bb9be5df2143cb360b5118145a277222 = L.marker(
+                [48.100288, 11.532215],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_c9302d803981559cd05555f7af416760 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_bb9be5df2143cb360b5118145a277222.setIcon(icon_c9302d803981559cd05555f7af416760);
+        
+    
+        var popup_546f3bd37f92edf08da39390bc5e35c8 = L.popup({"maxWidth": 140});
+
+        
+            
+                var html_219f9dcaafa6c5d29452cfc65c12c14b = $(`<div id="html_219f9dcaafa6c5d29452cfc65c12c14b" style="width: 100.0%; height: 100.0%;"><div style='width: 140px; font-size: 14px;'><strong>München</strong><br>(bfz München): 343 trainings</div></div>`)[0];
+                popup_546f3bd37f92edf08da39390bc5e35c8.setContent(html_219f9dcaafa6c5d29452cfc65c12c14b);
+            
+        
+
+        marker_bb9be5df2143cb360b5118145a277222.bindPopup(popup_546f3bd37f92edf08da39390bc5e35c8)
+        ;
+
+        
+    
+    
+            var marker_0d582d5f1688c7f587fca89817d1f697 = L.marker(
+                [50.949381, 6.950546],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_04e0c34580516636ab5bc9e1960b679d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0d582d5f1688c7f587fca89817d1f697.setIcon(icon_04e0c34580516636ab5bc9e1960b679d);
+        
+    
+        var popup_54b8e253c8da2195562dfdacd7d2e1cb = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_3c14ccb27407992888d195f5a59f39f4 = $(`<div id="html_3c14ccb27407992888d195f5a59f39f4" style="width: 100.0%; height: 100.0%;"><div style='width: 200px; font-size: 14px;'><strong>Köln</strong><br>(FAW Akademie Köln): 321 trainings</div></div>`)[0];
+                popup_54b8e253c8da2195562dfdacd7d2e1cb.setContent(html_3c14ccb27407992888d195f5a59f39f4);
+            
+        
+
+        marker_0d582d5f1688c7f587fca89817d1f697.bindPopup(popup_54b8e253c8da2195562dfdacd7d2e1cb)
+        ;
+
+        
+    
+    
+            var marker_024442202589d8f9ac3a649ec3dc181a = L.marker(
+                [52.403282, 9.718831],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_40f4b2704d4c05b13180b0609c356ce0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_024442202589d8f9ac3a649ec3dc181a.setIcon(icon_40f4b2704d4c05b13180b0609c356ce0);
+        
+    
+        var popup_9ccfc183f9ce97d6e11e45ec1c60f6e7 = L.popup({"maxWidth": 190});
+
+        
+            
+                var html_df85ffd27cbd7a97624bbae757892d49 = $(`<div id="html_df85ffd27cbd7a97624bbae757892d49" style="width: 100.0%; height: 100.0%;"><div style='width: 190px; font-size: 14px;'><strong>Hannover</strong><br>(SBH Nordost GmbH): 321 trainings</div></div>`)[0];
+                popup_9ccfc183f9ce97d6e11e45ec1c60f6e7.setContent(html_df85ffd27cbd7a97624bbae757892d49);
+            
+        
+
+        marker_024442202589d8f9ac3a649ec3dc181a.bindPopup(popup_9ccfc183f9ce97d6e11e45ec1c60f6e7)
+        ;
+
+        
+    
+    
+            var marker_ae169c8f746e89d3d8a8c56c4d7c286c = L.marker(
+                [51.215408, 6.923213],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_8474daec6a3eda5bd1d248b333b90f5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ae169c8f746e89d3d8a8c56c4d7c286c.setIcon(icon_8474daec6a3eda5bd1d248b333b90f5d);
+        
+    
+        var popup_e3ed2cc80fbde0b921e4679c8986420f = L.popup({"maxWidth": 940});
+
+        
+            
+                var html_de54f11b8bf1db2fd512486da9705f4a = $(`<div id="html_de54f11b8bf1db2fd512486da9705f4a" style="width: 100.0%; height: 100.0%;"><div style='width: 940px; font-size: 14px;'><strong>Erkrath</strong><br>(bfw - Unternehmen für Bildung. Berufsfortbildungswerk Gemein- nützige Bildungseinr. des DGB): 251 trainings</div></div>`)[0];
+                popup_e3ed2cc80fbde0b921e4679c8986420f.setContent(html_de54f11b8bf1db2fd512486da9705f4a);
+            
+        
+
+        marker_ae169c8f746e89d3d8a8c56c4d7c286c.bindPopup(popup_e3ed2cc80fbde0b921e4679c8986420f)
+        ;
+
+        
+    
+    
+            var marker_b265b9db7aa82533d485b42c8207f054 = L.marker(
+                [53.462451, 9.695107],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_915b9c577f08236480a78da5d030d371 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b265b9db7aa82533d485b42c8207f054.setIcon(icon_915b9c577f08236480a78da5d030d371);
+        
+    
+        var popup_c46d0601f335dd826d69a28160e798c0 = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_8e6d602be7b5102ac349370905ed8ca9 = $(`<div id="html_8e6d602be7b5102ac349370905ed8ca9" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Buxtehude</strong><br>(IBB Institut für Berufliche Bildung AG): 229 trainings</div></div>`)[0];
+                popup_c46d0601f335dd826d69a28160e798c0.setContent(html_8e6d602be7b5102ac349370905ed8ca9);
+            
+        
+
+        marker_b265b9db7aa82533d485b42c8207f054.bindPopup(popup_c46d0601f335dd826d69a28160e798c0)
+        ;
+
+        
+    
+    
+            var marker_be93310690a9f31b8ab0d7f01bd37d45 = L.marker(
+                [50.987845, 7.421919],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_c15177dcbc6f521fb2865061e3c5de66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_be93310690a9f31b8ab0d7f01bd37d45.setIcon(icon_c15177dcbc6f521fb2865061e3c5de66);
+        
+    
+        var popup_543ab9be721b9dbd1699583eb31d689e = L.popup({"maxWidth": 440});
+
+        
+            
+                var html_4a7aeca95a396dc2529bcbe6034d8156 = $(`<div id="html_4a7aeca95a396dc2529bcbe6034d8156" style="width: 100.0%; height: 100.0%;"><div style='width: 440px; font-size: 14px;'><strong>Engelskirchen</strong><br>(IAL Institut für angewandte Logistik GmbH): 216 trainings</div></div>`)[0];
+                popup_543ab9be721b9dbd1699583eb31d689e.setContent(html_4a7aeca95a396dc2529bcbe6034d8156);
+            
+        
+
+        marker_be93310690a9f31b8ab0d7f01bd37d45.bindPopup(popup_543ab9be721b9dbd1699583eb31d689e)
+        ;
+
+        
+    
+    
+            var marker_3eb4e8c8fec946efde0a87f582692acd = L.marker(
+                [49.473646, 10.996009],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_7ef7df5f1b22c41b1d03d05ec3532fd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_3eb4e8c8fec946efde0a87f582692acd.setIcon(icon_7ef7df5f1b22c41b1d03d05ec3532fd0);
+        
+    
+        var popup_ee893725d0ac29d3640a6e70624f22bf = L.popup({"maxWidth": 550});
+
+        
+            
+                var html_aea20964c86728bedf33b0f77a9e7d9f = $(`<div id="html_aea20964c86728bedf33b0f77a9e7d9f" style="width: 100.0%; height: 100.0%;"><div style='width: 550px; font-size: 14px;'><strong>Fürth, Bayern</strong><br>(Institut für angewandte Logistik GmbH Bildungsträger): 207 trainings</div></div>`)[0];
+                popup_ee893725d0ac29d3640a6e70624f22bf.setContent(html_aea20964c86728bedf33b0f77a9e7d9f);
+            
+        
+
+        marker_3eb4e8c8fec946efde0a87f582692acd.bindPopup(popup_ee893725d0ac29d3640a6e70624f22bf)
+        ;
+
+        
+    
+    
+            var marker_b0b89257cb342aa4690f5c62d8a4f0a1 = L.marker(
+                [49.418115, 8.624565],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_3f540aab352fab0c438cafd90eb41835 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0b89257cb342aa4690f5c62d8a4f0a1.setIcon(icon_3f540aab352fab0c438cafd90eb41835);
+        
+    
+        var popup_f63aa29ca67a0ae3a3e7c4e46e0645a6 = L.popup({"maxWidth": 210});
+
+        
+            
+                var html_c29a81604aca5c9446432b4714ea361e = $(`<div id="html_c29a81604aca5c9446432b4714ea361e" style="width: 100.0%; height: 100.0%;"><div style='width: 210px; font-size: 14px;'><strong>Heidelberg, Neckar</strong><br>(GFN GmbH): 183 trainings</div></div>`)[0];
+                popup_f63aa29ca67a0ae3a3e7c4e46e0645a6.setContent(html_c29a81604aca5c9446432b4714ea361e);
+            
+        
+
+        marker_b0b89257cb342aa4690f5c62d8a4f0a1.bindPopup(popup_f63aa29ca67a0ae3a3e7c4e46e0645a6)
+        ;
+
+        
+    
+    
+            var marker_0e51cd9f2e0c43c758b367b3566811df = L.marker(
+                [53.588484, 7.758782],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_6f596f5c3f964a0264098535867c316a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e51cd9f2e0c43c758b367b3566811df.setIcon(icon_6f596f5c3f964a0264098535867c316a);
+        
+    
+        var popup_8f7b16a6dae96c1e7e018f828db88662 = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_abb3f56eb4890ac4463aa68c137e00bd = $(`<div id="html_abb3f56eb4890ac4463aa68c137e00bd" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Wittmund</strong><br>(IBB Institut für Berufliche Bildung AG): 178 trainings</div></div>`)[0];
+                popup_8f7b16a6dae96c1e7e018f828db88662.setContent(html_abb3f56eb4890ac4463aa68c137e00bd);
+            
+        
+
+        marker_0e51cd9f2e0c43c758b367b3566811df.bindPopup(popup_8f7b16a6dae96c1e7e018f828db88662)
+        ;
+
+        
+    
+    
+            var marker_cc417f0ae7d7a21f9460c3bd8c6acdf7 = L.marker(
+                [51.500587, 6.797577],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_db084f5a2c99d5f16a0f0a434c40ca70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc417f0ae7d7a21f9460c3bd8c6acdf7.setIcon(icon_db084f5a2c99d5f16a0f0a434c40ca70);
+        
+    
+        var popup_61ff65c3499c392f4dd04031edc1f07b = L.popup({"maxWidth": 270});
+
+        
+            
+                var html_0382024ce19a59a4755fab31b4c6efd0 = $(`<div id="html_0382024ce19a59a4755fab31b4c6efd0" style="width: 100.0%; height: 100.0%;"><div style='width: 270px; font-size: 14px;'><strong>Duisburg</strong><br>(Bildungszentrum Handwerk): 169 trainings</div></div>`)[0];
+                popup_61ff65c3499c392f4dd04031edc1f07b.setContent(html_0382024ce19a59a4755fab31b4c6efd0);
+            
+        
+
+        marker_cc417f0ae7d7a21f9460c3bd8c6acdf7.bindPopup(popup_61ff65c3499c392f4dd04031edc1f07b)
+        ;
+
+        
+    
+    
+            var marker_37c8600725367b364a9ec61fc5021b1a = L.marker(
+                [53.173097, 8.691064],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_4ece7e67382861d59ccfcfa7f828439a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_37c8600725367b364a9ec61fc5021b1a.setIcon(icon_4ece7e67382861d59ccfcfa7f828439a);
+        
+    
+        var popup_bc16cb8a55513daae5dd7a651e05b0a1 = L.popup({"maxWidth": 410});
+
+        
+            
+                var html_fa03f7446e9628a053158472d190f25d = $(`<div id="html_fa03f7446e9628a053158472d190f25d" style="width: 100.0%; height: 100.0%;"><div style='width: 410px; font-size: 14px;'><strong>Bremen</strong><br>(Berufsförderungswerk Friedehorst gGmbH): 153 trainings</div></div>`)[0];
+                popup_bc16cb8a55513daae5dd7a651e05b0a1.setContent(html_fa03f7446e9628a053158472d190f25d);
+            
+        
+
+        marker_37c8600725367b364a9ec61fc5021b1a.bindPopup(popup_bc16cb8a55513daae5dd7a651e05b0a1)
+        ;
+
+        
+    
+    
+            var marker_49cfddf7e1944d0b73e8c437d5a863d6 = L.marker(
+                [48.718211, 10.770169],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_a61254eaa4243ffbd8737051dba71637 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_49cfddf7e1944d0b73e8c437d5a863d6.setIcon(icon_a61254eaa4243ffbd8737051dba71637);
+        
+    
+        var popup_a0df11752f200a34fa5e06267d2bbafa = L.popup({"maxWidth": 310});
+
+        
+            
+                var html_693bcb6592c70559d865025cc2e2c977 = $(`<div id="html_693bcb6592c70559d865025cc2e2c977" style="width: 100.0%; height: 100.0%;"><div style='width: 310px; font-size: 14px;'><strong>Donauwörth</strong><br>(bfz Donauwörth * Ulm * Aalen): 147 trainings</div></div>`)[0];
+                popup_a0df11752f200a34fa5e06267d2bbafa.setContent(html_693bcb6592c70559d865025cc2e2c977);
+            
+        
+
+        marker_49cfddf7e1944d0b73e8c437d5a863d6.bindPopup(popup_a0df11752f200a34fa5e06267d2bbafa)
+        ;
+
+        
+    
+    
+            var marker_0001daab925079c370e0a06f04045576 = L.marker(
+                [51.496901, 7.046594],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_1fdcf7176575f1e7ee8a78bbb64e7428 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0001daab925079c370e0a06f04045576.setIcon(icon_1fdcf7176575f1e7ee8a78bbb64e7428);
+        
+    
+        var popup_0d9c6a24c96684f256649617ce5ab6f4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_80f551f03afd11e3cc4eb3d28780cdd7 = $(`<div id="html_80f551f03afd11e3cc4eb3d28780cdd7" style="width: 100.0%; height: 100.0%;"><div style='width: 300px; font-size: 14px;'><strong>Essen, Ruhr</strong><br>(W.S. Werkstoff Service GmbH): 141 trainings</div></div>`)[0];
+                popup_0d9c6a24c96684f256649617ce5ab6f4.setContent(html_80f551f03afd11e3cc4eb3d28780cdd7);
+            
+        
+
+        marker_0001daab925079c370e0a06f04045576.bindPopup(popup_0d9c6a24c96684f256649617ce5ab6f4)
+        ;
+
+        
+    
+    
+            var marker_b7612639a1af8f5048fd6052018615cd = L.marker(
+                [51.316034, 9.491916],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_5db756500fecdcbce1c67112439f48d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_b7612639a1af8f5048fd6052018615cd.setIcon(icon_5db756500fecdcbce1c67112439f48d7);
+        
+    
+        var popup_986455a1ea4d8cb6aa37dd04f6ec36b3 = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_79e93dc3ffd21ef689fc6220a4a8a489 = $(`<div id="html_79e93dc3ffd21ef689fc6220a4a8a489" style="width: 100.0%; height: 100.0%;"><div style='width: 200px; font-size: 14px;'><strong>Kassel, Hessen</strong><br>(EVB-Training GmbH): 138 trainings</div></div>`)[0];
+                popup_986455a1ea4d8cb6aa37dd04f6ec36b3.setContent(html_79e93dc3ffd21ef689fc6220a4a8a489);
+            
+        
+
+        marker_b7612639a1af8f5048fd6052018615cd.bindPopup(popup_986455a1ea4d8cb6aa37dd04f6ec36b3)
+        ;
+
+        
+    
+    
+            var marker_5ec5f665c8bf733a06cec16e2495461b = L.marker(
+                [47.983015, 10.161641],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_c0e9107696a7ad917065f32c5784f5fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5ec5f665c8bf733a06cec16e2495461b.setIcon(icon_c0e9107696a7ad917065f32c5784f5fe);
+        
+    
+        var popup_a7170ae7d32b37abfe565d1704e3de03 = L.popup({"maxWidth": 330});
+
+        
+            
+                var html_fd73cf98abd0f3c9d83121282ff93835 = $(`<div id="html_fd73cf98abd0f3c9d83121282ff93835" style="width: 100.0%; height: 100.0%;"><div style='width: 330px; font-size: 14px;'><strong>Memmingen</strong><br>(bfz Unterallgäu * Bodensee * O): 125 trainings</div></div>`)[0];
+                popup_a7170ae7d32b37abfe565d1704e3de03.setContent(html_fd73cf98abd0f3c9d83121282ff93835);
+            
+        
+
+        marker_5ec5f665c8bf733a06cec16e2495461b.bindPopup(popup_a7170ae7d32b37abfe565d1704e3de03)
+        ;
+
+        
+    
+    
+            var marker_e64105b223b0736078cd93738accfb53 = L.marker(
+                [51.717972, 14.368131],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_5399d6efbd240c7169b92d41b3d9eb5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_e64105b223b0736078cd93738accfb53.setIcon(icon_5399d6efbd240c7169b92d41b3d9eb5d);
+        
+    
+        var popup_0fb0fbf008d3873fd9032619873b3d49 = L.popup({"maxWidth": 230});
+
+        
+            
+                var html_e51957db6623e90dd22f48ea5ebe316e = $(`<div id="html_e51957db6623e90dd22f48ea5ebe316e" style="width: 100.0%; height: 100.0%;"><div style='width: 230px; font-size: 14px;'><strong>Cottbus</strong><br>(FAW Akademie Cottbus): 118 trainings</div></div>`)[0];
+                popup_0fb0fbf008d3873fd9032619873b3d49.setContent(html_e51957db6623e90dd22f48ea5ebe316e);
+            
+        
+
+        marker_e64105b223b0736078cd93738accfb53.bindPopup(popup_0fb0fbf008d3873fd9032619873b3d49)
+        ;
+
+        
+    
+    
+            var marker_66213ee25f462754a1b46891ceae7fd4 = L.marker(
+                [48.574823, 13.384581],
+                {}
+            ).addTo(map_d2aabd4b283a54284d79063da5b341ba);
+        
+    
+            var icon_c212224e1f9fa03dccb1a2a38e274ff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_66213ee25f462754a1b46891ceae7fd4.setIcon(icon_c212224e1f9fa03dccb1a2a38e274ff1);
+        
+    
+        var popup_cda5a9dae2dfc9eaa945eb23e8db754e = L.popup({"maxWidth": 130});
+
+        
+            
+                var html_1e4c50587ea6b762d77e198643c13eda = $(`<div id="html_1e4c50587ea6b762d77e198643c13eda" style="width: 100.0%; height: 100.0%;"><div style='width: 130px; font-size: 14px;'><strong>Passau</strong><br>(bfz Passau): 109 trainings</div></div>`)[0];
+                popup_cda5a9dae2dfc9eaa945eb23e8db754e.setContent(html_1e4c50587ea6b762d77e198643c13eda);
+            
+        
+
+        marker_66213ee25f462754a1b46891ceae7fd4.bindPopup(popup_cda5a9dae2dfc9eaa945eb23e8db754e)
+        ;
+
+        
+    
+</script>
+</html>
